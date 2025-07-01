@@ -3,6 +3,9 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
+from dotenv import load_dotenv
+
+load_dotenv()  # Load variables from .env
 
 def get_answer(directory = "faiss_index", question="What is NLP"):
 
@@ -18,8 +21,7 @@ def get_answer(directory = "faiss_index", question="What is NLP"):
 
 
 
-    llm = ChatGroq(model="llama3-70b-8192",
-                groq_api_key="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")
+    llm = ChatGroq(model="llama3-70b-8192")
     
     prompt=PromptTemplate(
         template="""
