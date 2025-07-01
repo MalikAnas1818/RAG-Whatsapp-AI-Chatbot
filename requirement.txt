@@ -1,0 +1,12 @@
+langchain
+langchain-community
+openai
+faiss-cpu
+pypdf
+flask
+python-dotenv
+huggingface-hub
+requests
+flask
+twilio
+googlesearch-python
